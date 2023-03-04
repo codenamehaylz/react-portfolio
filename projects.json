@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Workout Kitchen",
+        "deployed": "https://allen-ec.github.io/workout_kitchen/",
+        "repo": "https://github.com/codenamehaylz/workout_kitchen",
+        "image": "",
+        "description": "A website that allows the user to search for recipes and exercises. This was a group project that utilises API calls to Spoonacular and Exercises by API Ninjas."
+    },
+    {
+        "title": "Team Profile Generator",
+        "deployed": "",
+        "repo": "https://github.com/codenamehaylz/team-profile-generator",
+        "image": "",
+        "description": "A command line application that allows the user to build an information page for their work team."
+    },
+    {
+        "title": "README Generator",
+        "deployed": "",
+        "repo": "https://github.com/codenamehaylz/README-generator",
+        "image": "",
+        "description": "A command line application that creates a professional README markdown file based on the user's inputs."
+    },
+    {
+        "title": "Code Quiz",
+        "deployed": "https://codenamehaylz.github.io/Code-Quiz/index.html",
+        "repo": "https://github.com/codenamehaylz/Code-Quiz",
+        "image": "",
+        "description": "A timed multiple-choice coding quiz that saves highscores to local storage."
+    },
+    {
+        "title": "Password Generator",
+        "deployed": "https://codenamehaylz.github.io/Password-Generator/",
+        "repo": "https://github.com/codenamehaylz/Password-Generator",
+        "image": "",
+        "description": "A website that creates a secure and random password based on the criteria that the user selects."
+    },
+    {
+        "title": "Work Day Scheduler",
+        "deployed": "https://codenamehaylz.github.io/Work-Day-Scheduler/",
+        "repo": "https://github.com/codenamehaylz/Work-Day-Scheduler",
+        "image": "",
+        "description": "A helpful work day scheduler that allows the user to type and save events into each hour slot."
+    }
+]
