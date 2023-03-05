@@ -32,24 +32,30 @@
 
 /* Contact */
 
-.contact-title {
-    margin: auto;
-    width: 50%;
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
 }
 
-.contact-info {
-    margin: auto;
-    width: 50%;
+.contact-title h1 {
+    font-size: 60px;
+}
+
+.contact-content a {
+    padding-right: 10px;
+    font-size: x-large;
+}
+
+.form-container {
+    padding-top: 25px;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .form-container button {
     border: 1px solid gray;
-}
-
-.form-container {
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
 }
 
 
@@ -77,3 +83,18 @@
     margin: 0px 10px;
     border: 1px solid gray;
 }
+
+
+
+/* MEDIA QUERIES for small screens*/
+
+@media (max-width: 576px) { 
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-title h1 {
+        font-size: 40px;
+    }
+ }

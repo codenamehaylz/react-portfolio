@@ -59,14 +59,17 @@ function Contact() {
 
     return (
       <div>
-        <h1 className="contact-title">Contact Me</h1>
-
-        <div className="contact-info">
-          <FontAwesomeIcon icon={faEnvelope} /> hb_060492@hotmail.co.uk <br />
-          <FontAwesomeIcon icon={faMobileScreen} /> 07725 333956 <br />
-          <a href="https://www.linkedin.com/in/hayley-blackburn1/"><FontAwesomeIcon icon={faLinkedin} /></a> 
-          <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>
-          <p>Or send me a message:</p>
+        <div className="contact-container">
+          <div className="contact-title">
+            <h1>Contact Me</h1>
+          </div>
+          
+          <div className="contact-content">
+            <FontAwesomeIcon icon={faEnvelope} /> hb_060492@hotmail.co.uk <br />
+            <FontAwesomeIcon icon={faMobileScreen} /> 07725 333956 <br />
+            <a href="https://www.linkedin.com/in/hayley-blackburn1/"><FontAwesomeIcon icon={faLinkedin} /></a> 
+            <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>
+          </div>
         </div>
         
         <div className="form-container">
