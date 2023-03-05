@@ -5,7 +5,7 @@ import projects from '../projects.json';
 //TODO must render dynamically 6 instances of the Project component
 
 function ProjectGallery() {
-  const [project, setProject]= useState(projects)
+  const [project, setProject] = useState(projects)
   console.log();
     return (
       <div>
