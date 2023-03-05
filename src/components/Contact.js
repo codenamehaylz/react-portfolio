@@ -70,43 +70,57 @@ function Contact() {
         </div>
         
         <div className="form-container">
-          <form onSubmit={formSubmit}>
-
+          <form className="row g-3 flex-column" onSubmit={formSubmit}>
           <input 
+            className="form-control"
             type="hidden" 
             name="access_key" 
             value="0eabe439-a824-4e37-9720-c804be54627a" />
 
+          <div className="col-sm-10 col-lg-8 align-self-center">
           <input
+            className="form-control"
             onChange={formChange}
             type="text" 
             name="firstName"
             value={formData.firstName}
             placeholder="First Name" />
+          </div>
 
+          <div className="col-sm-10 col-lg-8 align-self-center">
           <input
+            className="form-control"
             onChange={formChange}
             type="text" 
             name="lastName"
             value={formData.lastName}
             placeholder="Last Name" />
+          </div>
 
+          <div className="col-sm-10 col-lg-8 align-self-center">
           <input
+            className="form-control"
             onChange={formChange}
             type="text" 
             name="email"
             value={formData.email}
             placeholder="Email address" />
+          </div>
 
+          <div className="col-sm-10 col-lg-8 align-self-center">
           <textarea
+            className="form-control"
             onChange={formChange}
             name="message"
             value={formData.message}
             rows={10}
             cols={50}
             placeholder="Type your message here" />
+          </div>
 
-          <button type="submit">Submit</button>
+          <div className="col-sm-10 col-lg-8 align-self-center">
+          <button className="btn" type="submit">Submit</button>
+          </div>
 
           {success && <p>Message Sent!</p>}
         </form>
