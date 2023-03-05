@@ -1,4 +1,9 @@
 import React from 'react';
+import workoutImg from "../images/Workout-Kitchen.png";
+import teamProfileImg from "../images/Team-Profile-Generator.png";
+import codeQuizImg from "../images/Code-Quiz.png";
+import passwordGenImg from "../images/Password-Generator.gif";
+import workdayImg from "../images/Work-Day-Scheduler.png";
 
 // Reusable component using json data as props to render a single instance for each project
 //TODO router props to render right project based on user selection
@@ -6,12 +11,13 @@ import React from 'react';
 
 //TODO pin the repositories on GitHub profile
 
+
 function Project(props) {
 
     // checks if there is a deployed url for the project
     const isDeployed = () => {
         if (props.deployed) {
-            return <a href={props.deployed}>Deployed App</a>;
+            return <a href={props.deployed}><button className="btn">Deployed App</button></a>;
         } else {
             return "";
         }
@@ -20,17 +26,17 @@ function Project(props) {
     const displayImage = () => {
         switch (props.title) {
             case "Workout Kitchen":
-                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Workout-Kitchen.png")} />
+                return `url('${workoutImg}')`
             case "Team Profile Generator":
-                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Team-Profile-Generator.png")} />
+                return `url('${teamProfileImg}')`
             case "README Generator":
-                return <img alt={`Screenshot of ${props.title}`} src="" />
+                return `url('${teamProfileImg}')`
             case "Code Quiz":
-                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Code-Quiz.png")} />
+                return `url('${codeQuizImg}')`
             case "Password Generator":
-                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Password-Generator.gif")} />
+                return `url('${passwordGenImg}')`
             case "Work Day Scheduler":
-                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Work-Day-Scheduler.png")} />
+                return `url('${workdayImg}')`
             default:
             break;
         }
@@ -38,14 +44,15 @@ function Project(props) {
 
     return (
         <div>
-            <div className="img-container">
-                {displayImage()}
-            </div>
-            <div className="project-content">
-                <h2>{props.title}</h2>
-                <p>{props.description}</p>
-                {isDeployed()}<br />
-                <a href={props.repo}>GitHub Repo</a>
+            <div className="project-column column">
+                <div className="img-container" style={{backgroundImage: displayImage()}}>
+                </div>
+                <div className="project-content p-3">
+                    <h2>{props.title}</h2>
+                    <p>{props.description}</p>
+                    {isDeployed()}
+                    <a href={props.repo}><button className="btn">GitHub Repo</button></a>
+                </div>
             </div>
         </div>
     )
