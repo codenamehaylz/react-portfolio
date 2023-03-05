@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 function Contact() {
@@ -61,7 +62,9 @@ function Contact() {
         <h1>Contact Me</h1>
 
         <FontAwesomeIcon icon={faEnvelope} /> hb_060492@hotmail.co.uk <br />
-        <FontAwesomeIcon icon={faMobileScreen} /> 07725 333956
+        <FontAwesomeIcon icon={faMobileScreen} /> 07725 333956 <br />
+        <a href="https://www.linkedin.com/in/hayley-blackburn1/"><FontAwesomeIcon icon={faLinkedin} /></a> 
+        <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>
 
         <p>Or send me a message:</p>
 
