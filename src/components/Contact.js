@@ -68,8 +68,9 @@ function Contact() {
           <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>
           <p>Or send me a message:</p>
         </div>
+        
         <div className="form-container">
-                  <form onSubmit={formSubmit}>
+          <form onSubmit={formSubmit}>
 
           <input 
             type="hidden" 
