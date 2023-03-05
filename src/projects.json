@@ -4,7 +4,7 @@
         "title": "Workout Kitchen",
         "deployed": "https://allen-ec.github.io/workout_kitchen/",
         "repo": "https://github.com/codenamehaylz/workout_kitchen",
-        "image": "",
+        "image": "./images/Workout-Kitchen.png",
         "description": "A website that allows the user to search for recipes and exercises. This was a group project that utilises API calls to Spoonacular and Exercises by API Ninjas."
     },
     {

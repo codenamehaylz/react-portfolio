@@ -17,10 +17,29 @@ function Project(props) {
         }
     }
 
+    const displayImage = () => {
+        switch (props.title) {
+            case "Workout Kitchen":
+                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Workout-Kitchen.png")} />
+            case "Team Profile Generator":
+                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Team-Profile-Generator.png")} />
+            case "README Generator":
+                return <img alt={`Screenshot of ${props.title}`} src="" />
+            case "Code Quiz":
+                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Code-Quiz.png")} />
+            case "Password Generator":
+                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Password-Generator.gif")} />
+            case "Work Day Scheduler":
+                return <img alt={`Screenshot of ${props.title}`} src={require("../images/Work-Day-Scheduler.png")} />
+            default:
+            break;
+        }
+    }
+
     return (
         <div>
             <div className="img-container">
-                <img alt={`Screenshot of ${props.title}`} src={props.image} />
+                {displayImage()}
             </div>
             <div className="project-content">
                 <h2>{props.title}</h2>
