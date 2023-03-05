@@ -1,12 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 
-//TODO contain contact info
-//TODO contact form for handling events
 
 function Contact() {
+  // creates a state for the contact form submission
   const [success, setSuccess] = useState(false);
-
+  // creates a state for the data within the contact form
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -15,6 +16,7 @@ function Contact() {
     access_key: "0eabe439-a824-4e37-9720-c804be54627a"
   });
 
+  // Function for submitting form data to an email address using Web3Forms API
   const formSubmit = (event) => {
     event.preventDefault()
     const json = JSON.stringify(formData);
@@ -45,6 +47,7 @@ function Contact() {
 
   }
 
+  // Function for updating the formData state when user types into the form
   const formChange = (event) => {
     setFormData({
       ...formData,
@@ -56,6 +59,11 @@ function Contact() {
     return (
       <div>
         <h1>Contact Me</h1>
+
+        <FontAwesomeIcon icon={faEnvelope} /> hb_060492@hotmail.co.uk <br />
+        <FontAwesomeIcon icon={faMobileScreen} /> 07725 333956
+
+        <p>Or send me a message:</p>
 
         <form onSubmit={formSubmit}>
 
@@ -89,6 +97,8 @@ function Contact() {
             onChange={formChange}
             name="message"
             value={formData.message}
+            rows={10}
+            cols={50}
             placeholder="Type your message here" />
 
           <button type="submit">Submit</button>
