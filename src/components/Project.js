@@ -8,6 +8,7 @@ import React from 'react';
 
 function Project(props) {
 
+    // checks if there is a deployed url for the project
     const isDeployed = () => {
         if (props.deployed) {
             return <a href={props.deployed}>Deployed App</a>;

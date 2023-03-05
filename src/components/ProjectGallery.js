@@ -5,10 +5,11 @@ import projects from '../projects.json';
 //TODO must render dynamically 6 instances of the Project component
 
 function ProjectGallery() {
+  //sets the 'project' state to all the projects in my json file
   const [project, setProject] = useState(projects)
-  console.log();
     return (
       <div>
+        {/* iterates through the projects and displays the info for each one*/}
         {project.map(project => (
         <Project 
         title={project.title}

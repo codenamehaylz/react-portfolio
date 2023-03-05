@@ -1,8 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-//TODO must be rendered across entire site
-//TODO must contain navbar
+//TODO add styling and classes
 
 function Header() {
     return (
@@ -15,7 +14,7 @@ function Header() {
                 <li>
                     <NavLink 
                     to="/"
-                    className={isActive => isActive ? "nav-link active" : "nav-link"}>
+                    className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
                         Home
                     </NavLink>
                 </li>
@@ -23,14 +22,14 @@ function Header() {
                 <li>
                     <NavLink 
                     to="/projects"
-                    className={isActive => isActive ? "nav-link active" : "nav-link"}>
+                    className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
                         Projects
                     </NavLink>
                 </li>
 
                 <li>
                     <NavLink to="/contact"
-                    className={isActive => isActive ? "nav-link active" : "nav-link"}>
+                    className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
                         Contact
                     </NavLink>
                 </li>
