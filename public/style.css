@@ -1,22 +1,5 @@
 /* Navbar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav .nav-link {
-    text-decoration: none;
-}
-
-nav ul .nav-link {
-    padding: 0px 20px;
-}
 
 
 /* Home */
