@@ -59,16 +59,17 @@ function Contact() {
 
     return (
       <div>
-        <h1>Contact Me</h1>
+        <h1 className="contact-title">Contact Me</h1>
 
-        <FontAwesomeIcon icon={faEnvelope} /> hb_060492@hotmail.co.uk <br />
-        <FontAwesomeIcon icon={faMobileScreen} /> 07725 333956 <br />
-        <a href="https://www.linkedin.com/in/hayley-blackburn1/"><FontAwesomeIcon icon={faLinkedin} /></a> 
-        <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>
-
-        <p>Or send me a message:</p>
-
-        <form onSubmit={formSubmit}>
+        <div className="contact-info">
+          <FontAwesomeIcon icon={faEnvelope} /> hb_060492@hotmail.co.uk <br />
+          <FontAwesomeIcon icon={faMobileScreen} /> 07725 333956 <br />
+          <a href="https://www.linkedin.com/in/hayley-blackburn1/"><FontAwesomeIcon icon={faLinkedin} /></a> 
+          <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>
+          <p>Or send me a message:</p>
+        </div>
+        <div className="form-container">
+                  <form onSubmit={formSubmit}>
 
           <input 
             type="hidden" 
@@ -108,6 +109,7 @@ function Contact() {
 
           {success && <p>Message Sent!</p>}
         </form>
+        </div>
       </div>
     );
 }
