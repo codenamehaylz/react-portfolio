@@ -16,7 +16,7 @@ function Project(props) {
             return "";
         }
     }
-
+    // displays the correct image for each project
     const displayImage = () => {
         switch (props.title) {
             case "Workout Kitchen":

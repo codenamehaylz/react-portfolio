@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Project from './Project';
 import projects from '../projects.json';
 
-//TODO must render dynamically 6 instances of the Project component
+//TODO display projects in grid
 
 function ProjectGallery() {
   //sets the 'project' state to all the projects in my json file
