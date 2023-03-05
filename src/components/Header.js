@@ -6,19 +6,13 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     return (
         <nav>
-            <div>
+            <NavLink 
+            to="/"
+            className="nav-link name">
                 Hayley Blackburn
-            </div>
-
+            </NavLink>
+            
             <ul>
-                <li>
-                    <NavLink 
-                    to="/"
-                    className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
-                        Home
-                    </NavLink>
-                </li>
-
                 <li>
                     <NavLink 
                     to="/projects"
