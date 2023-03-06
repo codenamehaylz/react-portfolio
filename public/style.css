@@ -3,9 +3,9 @@
 :root {
     --vsbrightblue: rgb(79, 193, 255);
     --vsgold: rgb(241, 215, 16);
-    --vsyellow: rgb(220, 200, 170);
+    --vsyellow: rgb(220, 220, 155);
     --vspink: rgb(197, 14, 192);
-    --vsorange: rgb(206, 145, 120);
+    --vsorange: rgb(219, 136, 103);
     --vsplainblue: rgb(86, 156, 214);
 }
 
@@ -25,12 +25,13 @@ body {
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .hero-container img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
     box-shadow: 10px 10px 1px 0px var(--vsbrightblue);
 }
 
@@ -39,11 +40,30 @@ body {
     text-align: center;
     padding: 0px 20px;
     width: 60%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
 }
 
 .hero-social a {
     padding: 0px 10px;
     font-size: xx-large;
+    color: var(--vsbrightblue)
+}
+
+.blue {
+    color: var(--vsplainblue)
+}
+
+.yellow {
+    color: var(--vsyellow)
+}
+
+.orange {
+    color: var(--vsorange)
+}
+
+.gold {
+    color: var(--vsgold)
 }
 
 

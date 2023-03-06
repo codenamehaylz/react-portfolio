@@ -8,12 +8,16 @@ function Home() {
         <div className="hero-container container-fluid">
           <img alt="Headshot of Hayley Blackburn" src={require("../images/Me.jpg")} />
           <div className="hero-title text-end">
-            <h1 className="display-1">Hayley Blackburn</h1>
-            <h3 className="display-5">Front End Web Developer</h3>
+            <h1 className="display-2"><span className="blue">console</span><br />
+            <span className="yellow">.log</span>
+            <span className="gold">(</span>
+            <span className="orange">"Hi!"</span>
+            <span className="gold">)</span>;</h1>
           </div>
         </div>
         <div className="hero-content container-fluid">
-          <p className="lead">Welcome to my portfolio! Go ahead and take a look at the previous projects that I've worked on. My passion is creating beautiful products with clean and efficient code.</p>
+          <p>My name is Hayley Blackburn, and i'm a Front End Web Developer. My passion is to create beautiful products with clean and efficient code.
+          Please go ahead and take a look at the projects I have worked on.</p>
           <div className="hero-social">
             <a href="https://www.linkedin.com/in/hayley-blackburn1/"><FontAwesomeIcon icon={faLinkedin} /></a> 
             <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>
