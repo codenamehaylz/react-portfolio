@@ -6,6 +6,7 @@ import ProjectGallery from './components/ProjectGallery';
 import Contact from './components/Contact';
 
 function App() {
+
   return (
     <Router>
       <div>
