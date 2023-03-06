@@ -4,6 +4,12 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     return (
         <nav className="navbar">
+            <NavLink 
+                to="/"
+                className="navbar-brand">
+                    Hayley Blackburn
+                </NavLink>
+
             <ul className="nav">
                 <li className="nav-item">
                     <NavLink 
@@ -14,20 +20,13 @@ function Header() {
                 </li>
 
                 <li className="nav-item">
-                    <NavLink 
-                    to="/"
-                    className="navbar-brand">
-                        Hayley Blackburn
-                    </NavLink>
-                </li>
-
-                <li className="nav-item">
                     <NavLink to="/contact"
                     className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
                         Contact
                     </NavLink>
                 </li>
             </ul>
+
         </nav>
     )
 }

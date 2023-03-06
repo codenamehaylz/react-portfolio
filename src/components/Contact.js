@@ -59,7 +59,7 @@ function Contact() {
 
     return (
       <div>
-        <div className="contact-container">
+        <div className="contact-container p-5">
           <div className="contact-title">
             <h1>Contact Me</h1>
           </div>
