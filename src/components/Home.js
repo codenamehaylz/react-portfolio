@@ -17,7 +17,7 @@ function Home() {
         </div>
         <div className="hero-content container-fluid">
           <p>My name is Hayley Blackburn, and i'm a Front End Web Developer. My passion is to create beautiful products with clean and efficient code.
-          Please go ahead and take a look at the projects I have worked on.</p>
+          Please go ahead and take a look at the projects that I have worked on.</p>
           <div className="hero-social">
             <a href="https://www.linkedin.com/in/hayley-blackburn1/"><FontAwesomeIcon icon={faLinkedin} /></a> 
             <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>

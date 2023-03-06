@@ -4,15 +4,50 @@
     --vsbrightblue: rgb(79, 193, 255);
     --vsgold: rgb(241, 215, 16);
     --vsyellow: rgb(220, 220, 155);
-    --vspink: rgb(197, 14, 192);
+    --vspink: rgb(197, 134, 192);
     --vsorange: rgb(219, 136, 103);
     --vsplainblue: rgb(86, 156, 214);
 }
 
 body {
     background-color: rgb(36, 40, 46);
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    font-family: 'IBM Plex Sans', sans-serif;
 }
+
+
+/* Navbar */
+
+.navbar {
+    justify-content: center;
+    background-color: rgb(46, 52, 59);
+}
+
+.nav {
+    align-items: baseline;
+}
+
+.navbar-brand {
+    margin: 0px 50px;
+}
+
+.nav-link {
+    color: var(--vspink);
+}
+
+.navbar-brand {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--vsbrightblue);
+}
+
+.navbar-brand:hover {
+    color: var(--vsplainblue);
+}
+
+.nav-link:hover {
+    color: var(--vsplainblue);
+}
+
 
 /* Home */
 
