@@ -32,6 +32,13 @@ a:hover {
     color: #fff;
 }
 
+.btn:hover {
+    color: var(--vsbrightblue);
+    border: 1px solid var(--vsbrightblue);
+}
+
+
+
 /* Navbar */
 
 .navbar {
@@ -45,6 +52,9 @@ a:hover {
 
 .navbar-brand {
     margin: 0px 50px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--vspink);
+    font-size: 1.6rem;
 }
 
 .nav-link {
@@ -52,10 +62,9 @@ a:hover {
     font-size: 1.2rem;
 }
 
-.navbar-brand {
-    font-family: 'IBM Plex Mono', monospace;
-    color: var(--vspink);
-    font-size: 1.6rem;
+.nav-link .active, .nav-link:focus {
+    color: var(--vsbrightblue);
+    text-decoration: underline;
 }
 
 .navbar-brand:hover {
@@ -65,6 +74,7 @@ a:hover {
 .nav-link:hover {
     color: var(--vsyellow);
 }
+
 
 
 /* Home */
@@ -118,6 +128,7 @@ a:hover {
 .gold {
     color: var(--vsgold)
 }
+
 
 
 /* Contact */
@@ -178,7 +189,7 @@ a:hover {
 
 
 
-/* MEDIA QUERIES for small screens*/
+/* MEDIA QUERIES */
 
 @media (max-width: 576px) { 
     .contact-container {
