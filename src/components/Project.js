@@ -44,6 +44,7 @@ function Project(props) {
                 <div className="project-content p-3">
                     <h2>{props.title}</h2>
                     <p>{props.description}</p>
+                    <p>{props.features}</p>
                     {isDeployed()}
                     <a href={props.repo}><button>GitHub Repo</button></a>
                 </div>

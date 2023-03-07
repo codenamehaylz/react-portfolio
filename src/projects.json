@@ -5,7 +5,8 @@
         "deployed": "https://allen-ec.github.io/workout_kitchen/",
         "repo": "https://github.com/codenamehaylz/workout_kitchen",
         "image": "./images/Workout-Kitchen.png",
-        "description": "A website that allows the user to search for recipes and exercises. This was a group project that utilises API calls to Spoonacular and Exercises by API Ninjas."
+        "description": "A website that allows the user to search for recipes and exercises. This was a group project that utilises API calls to Spoonacular and Exercises by API Ninjas.",
+        "features": "Created with: HTML, CSS, Bootstrap, Javascript, JQuery, JQuery UI, Ajax API"
     },
     {
         "key": 2,
@@ -13,7 +14,8 @@
         "deployed": "",
         "repo": "https://github.com/codenamehaylz/team-profile-generator",
         "image": "",
-        "description": "A command line application that allows the user to build an information page for their work team."
+        "description": "A command line application that allows the user to build an information page for their work team.",
+        "features": "Created with: Node.js, Inquirer npm, Jest npm, HTML, CSS, Bootstrap"
     },
     {
         "key": 3,
@@ -21,7 +23,8 @@
         "deployed": "",
         "repo": "https://github.com/codenamehaylz/README-generator",
         "image": "",
-        "description": "A command line application that creates a professional README markdown file based on the user's inputs."
+        "description": "A command line application that creates a professional README markdown file based on the user's inputs.",
+        "features": "Created with: Node.js and Inquirer npm"
     },
     {
         "key": 4,
@@ -29,7 +32,8 @@
         "deployed": "https://codenamehaylz.github.io/Code-Quiz/index.html",
         "repo": "https://github.com/codenamehaylz/Code-Quiz",
         "image": "",
-        "description": "A timed multiple-choice coding quiz that saves highscores to local storage."
+        "description": "A timed multiple-choice coding quiz that saves highscores to local storage.",
+        "features": "Created with: HTML, CSS, Javascript"
     },
     {
         "key": 5,
@@ -37,7 +41,8 @@
         "deployed": "https://codenamehaylz.github.io/Password-Generator/",
         "repo": "https://github.com/codenamehaylz/Password-Generator",
         "image": "",
-        "description": "A website that creates a secure and random password based on the criteria that the user selects."
+        "description": "A website that creates a secure and random password based on the criteria that the user selects.",
+        "features": "Created with: HTML, CSS, Javascript"
     },
     {
         "key": 6,
@@ -45,6 +50,7 @@
         "deployed": "https://codenamehaylz.github.io/Work-Day-Scheduler/",
         "repo": "https://github.com/codenamehaylz/Work-Day-Scheduler",
         "image": "",
-        "description": "A helpful work day scheduler that allows the user to type and save events into each hour slot."
+        "description": "A helpful work day scheduler that allows the user to type and save events into each hour slot.",
+        "features": "Created with: HTML, CSS, Bootstrap, Javascript, JQuery, Moment.js"
     }
 ]

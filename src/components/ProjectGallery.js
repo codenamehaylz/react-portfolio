@@ -16,6 +16,7 @@ function ProjectGallery() {
             title={project.title}
             image={project.image}
             description={project.description}
+            features={project.features}
             deployed={project.deployed}
             repo={project.repo}
             key={project.key}
