@@ -38,7 +38,7 @@ function Project(props) {
 
     return (
         <div>
-            <div className="project-column column">
+            <div className="project-card column">
                 <div className="img-container" style={{backgroundImage: displayImage()}}>
                 </div>
                 <div className="project-content p-3">

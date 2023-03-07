@@ -99,7 +99,10 @@ button:hover {
     width: 250px;
     height: 250px;
     border-radius: 125px;
-    box-shadow: 10px 10px 1px 0px var(--vsbrightblue);
+    box-shadow: 
+    1px 1px 15px 0px rgba(0, 0, 0, 0.6),
+    10px 10px 1px 0px var(--vsbrightblue)
+
 }
 
 .hero-content {
@@ -181,9 +184,16 @@ button:hover {
     margin-bottom: 50px;
 }
 
-.project-column {
+.project-card {
     border-radius: 25px;
-    box-shadow: 4px 4px 8px 2px rgb(0, 0, 0)
+    box-shadow: 1px 4px 6px 0px rgb(0, 0, 0);
+    transition: box-shadow 0.2s;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 1px 6px 10px 0px rgb(0, 0, 0);
+    transform: scale(1.01);
 }
 
 .project-content button {
