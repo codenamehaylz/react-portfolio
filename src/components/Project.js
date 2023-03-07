@@ -5,19 +5,12 @@ import codeQuizImg from "../images/Code-Quiz.png";
 import passwordGenImg from "../images/Password-Generator.gif";
 import workdayImg from "../images/Work-Day-Scheduler.png";
 
-// Reusable component using json data as props to render a single instance for each project
-//TODO router props to render right project based on user selection
-//TODO render: Project Title, Link to deployed, Link to GitHub Repo, GIF or screenshot of deployed app
-
-//TODO pin the repositories on GitHub profile
-
-
 function Project(props) {
 
     // checks if there is a deployed url for the project
     const isDeployed = () => {
         if (props.deployed) {
-            return <a href={props.deployed}><button className="btn">Deployed App</button></a>;
+            return <a href={props.deployed}><button>Deployed App</button></a>;
         } else {
             return "";
         }
@@ -51,7 +44,7 @@ function Project(props) {
                     <h2>{props.title}</h2>
                     <p>{props.description}</p>
                     {isDeployed()}
-                    <a href={props.repo}><button className="btn">GitHub Repo</button></a>
+                    <a href={props.repo}><button>GitHub Repo</button></a>
                 </div>
             </div>
         </div>

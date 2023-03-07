@@ -122,7 +122,7 @@ function Contact() {
           </div>
 
           <div className="col-sm-10 col-lg-8 align-self-center">
-          <button className="btn" type="submit">Submit</button>
+          <button type="submit">Submit</button>
           </div>
 
           {success && <p>Message Sent!</p>}

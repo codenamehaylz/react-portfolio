@@ -27,12 +27,15 @@ a:hover {
     color: var(--vsyellow);
 }
 
-.btn {
+button {
+    padding: 8px;
+    background-color: transparent;
     border: 1px solid #fff;
+    border-radius: 8px;
     color: #fff;
 }
 
-.btn:hover {
+button:hover {
     color: var(--vsbrightblue);
     border: 1px solid var(--vsbrightblue);
 }
