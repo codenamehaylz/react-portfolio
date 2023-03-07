@@ -4,7 +4,7 @@ import projects from '../projects.json';
 
 function ProjectGallery() {
   //sets the 'project' state to all the projects in my json file
-  const [project, setProject] = useState(projects)
+  const [project] = useState(projects)
     return (
       <div>
         <h1 className="project-title text-center p-5">Projects</h1>
