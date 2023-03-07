@@ -1,6 +1,7 @@
 import React from 'react';
 import workoutImg from "../images/Workout-Kitchen.png";
 import teamProfileImg from "../images/Team-Profile-Generator.png";
+import readmeImg from "../images/READMEgen.png";
 import codeQuizImg from "../images/Code-Quiz.png";
 import passwordGenImg from "../images/Password-Generator.gif";
 import workdayImg from "../images/Work-Day-Scheduler.png";
@@ -23,7 +24,7 @@ function Project(props) {
             case "Team Profile Generator":
                 return `url('${teamProfileImg}')`
             case "README Generator":
-                return `url('${teamProfileImg}')`
+                return `url('${readmeImg}')`
             case "Code Quiz":
                 return `url('${codeQuizImg}')`
             case "Password Generator":
