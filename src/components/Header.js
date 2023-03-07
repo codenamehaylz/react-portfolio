@@ -5,7 +5,7 @@ function Header() {
     return (
         <nav className="navbar">
             <NavLink 
-                to="/"
+                to="/react-portfolio"
                 className="navbar-brand">
                     Hayley Blackburn
                 </NavLink>
