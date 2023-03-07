@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/react-portfolio/static/js/main.9e02bf05.js",
+    "static/media/Me.jpg": "/react-portfolio/static/media/Me.6c2c1eb815d95dd17677.jpg",
+    "static/media/Password-Generator.gif": "/react-portfolio/static/media/Password-Generator.dd9993651cc64ddb4f35.gif",
+    "static/media/Workout-Kitchen.png": "/react-portfolio/static/media/Workout-Kitchen.0342039019f3d2ddd951.png",
+    "static/media/Work-Day-Scheduler.png": "/react-portfolio/static/media/Work-Day-Scheduler.68274eebc36955ad48df.png",
+    "static/media/Team-Profile-Generator.png": "/react-portfolio/static/media/Team-Profile-Generator.0fb484ab5e8d7c2f50ab.png",
+    "static/media/READMEgen.png": "/react-portfolio/static/media/READMEgen.e42da9975ba5d63d26aa.png",
+    "static/media/Code-Quiz.png": "/react-portfolio/static/media/Code-Quiz.1e33eeb4fe7b50465a75.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.9e02bf05.js.map": "/react-portfolio/static/js/main.9e02bf05.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9e02bf05.js"
+  ]
+}
