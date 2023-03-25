@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-
 function Contact() {
-  // creates a state for the contact form submission
+  // creates valiation states for the contact form submission
   const [success, setSuccess] = useState(false);
+  const [fail, setFail] = useState(false);
   // creates a state for the data within the contact form
   const [formData, setFormData] = useState({
     firstName: "",
@@ -19,33 +19,42 @@ function Contact() {
 
   // Function for submitting form data to an email address using Web3Forms API
   const formSubmit = (event) => {
-    event.preventDefault()
-    const json = JSON.stringify(formData);
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+      event.preventDefault()
+      setFail(true);
+      setTimeout(() => {
+        setFail(false);
+      }, 4000);
+      return;
+    } else {
 
-    fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: json
-      })
-      .then(response => response.json())
-      .then(data => {
-        setSuccess(true);
-        setFormData({
-          ...formData,
-          firstName: "",
-          lastName: "",
-          email: "",
-          message: "",
+      event.preventDefault()
+      const json = JSON.stringify(formData);
+
+      fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          body: json
         })
-        setTimeout(() => {
-          setSuccess(false);
-        }, 4000);
-      })
-      .catch(error => console.log(error));
-
+        .then(response => response.json())
+        .then(data => {
+          setSuccess(true);
+          setFormData({
+            ...formData,
+            firstName: "",
+            lastName: "",
+            email: "",
+            message: "",
+          })
+          setTimeout(() => {
+            setSuccess(false);
+          }, 4000);
+        })
+        .catch(error => console.log(error));
+    }
   }
 
   // Function for updating the formData state when user types into the form
@@ -125,7 +134,8 @@ function Contact() {
           <button type="submit">Submit</button>
           </div>
 
-          {success && <p>Message Sent!</p>}
+          {success && <p className="text-center fs-5">Message Sent!</p>}
+          {fail && <p className="text-center fs-5" style={{color: '#de4747'}}>Please fill in all fields</p>}
         </form>
         </div>
       </div>
