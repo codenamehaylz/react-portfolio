@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.820e7de6.css",
-    "main.js": "/react-portfolio/static/js/main.b38bb2a2.js",
+    "main.js": "/react-portfolio/static/js/main.7807f5ef.js",
+    "static/media/Roamer.png": "/react-portfolio/static/media/Roamer.9e2244d764ec10627dec.png",
     "static/media/Me.jpg": "/react-portfolio/static/media/Me.6c2c1eb815d95dd17677.jpg",
     "static/media/Password-Generator.gif": "/react-portfolio/static/media/Password-Generator.dd9993651cc64ddb4f35.gif",
     "static/media/HayleyBlackburnCV.pdf": "/react-portfolio/static/media/HayleyBlackburnCV.9a1e7b5bdbd4b073f442.pdf",
@@ -12,10 +13,10 @@
     "static/media/Code-Quiz.png": "/react-portfolio/static/media/Code-Quiz.1e33eeb4fe7b50465a75.png",
     "index.html": "/react-portfolio/index.html",
     "main.820e7de6.css.map": "/react-portfolio/static/css/main.820e7de6.css.map",
-    "main.b38bb2a2.js.map": "/react-portfolio/static/js/main.b38bb2a2.js.map"
+    "main.7807f5ef.js.map": "/react-portfolio/static/js/main.7807f5ef.js.map"
   },
   "entrypoints": [
     "static/css/main.820e7de6.css",
-    "static/js/main.b38bb2a2.js"
+    "static/js/main.7807f5ef.js"
   ]
 }
