@@ -5,13 +5,14 @@ import readmeImg from "../images/READMEgen.png";
 import codeQuizImg from "../images/Code-Quiz.png";
 import passwordGenImg from "../images/Password-Generator.gif";
 import workdayImg from "../images/Work-Day-Scheduler.png";
+import roamerImg from "../images/Roamer.png";
 
 function Project(props) {
 
     // checks if there is a deployed url for the project
     const isDeployed = () => {
         if (props.deployed) {
-            return <a href={props.deployed}><button>Deployed App</button></a>;
+            return <a href={props.deployed} target="_blank" rel="noreferrer"><button>Deployed App</button></a>;
         } else {
             return "";
         }
@@ -19,6 +20,8 @@ function Project(props) {
     // displays the correct image for each project
     const displayImage = () => {
         switch (props.title) {
+            case "Roamer":
+                return `url('${roamerImg}')`
             case "Workout Kitchen":
                 return `url('${workoutImg}')`
             case "Team Profile Generator":

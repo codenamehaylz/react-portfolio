@@ -1,15 +1,24 @@
 [
     {
         "key": 1,
+        "title": "Roamer",
+        "deployed": "https://roamer.netlify.app/",
+        "repo": "https://github.com/codenamehaylz/roamer",
+        "image": "./images/Roamer.png",
+        "description": "A useful tool for travellers and tourists to find places of interest in cities around the world. This was a group project that uses Leaflet for the map and API calls to Geoapify and OpenWeather.",
+        "features": "Created with: React, Node.js, HTML, CSS, Bootstrap, Moment.js, Leaflet, React-Toastify, APIs"
+    },
+    {
+        "key": 2,
         "title": "Workout Kitchen",
         "deployed": "https://allen-ec.github.io/workout_kitchen/",
         "repo": "https://github.com/codenamehaylz/workout_kitchen",
         "image": "./images/Workout-Kitchen.png",
         "description": "A website that allows the user to search for recipes and exercises. This was a group project that utilises API calls to Spoonacular and Exercises by API Ninjas.",
-        "features": "Created with: HTML, CSS, Bootstrap, Javascript, JQuery, JQuery UI, Ajax API"
+        "features": "Created with: HTML, CSS, Bootstrap, Javascript, JQuery, JQuery UI, Ajax, APIs"
     },
     {
-        "key": 2,
+        "key": 3,
         "title": "Team Profile Generator",
         "deployed": "",
         "repo": "https://github.com/codenamehaylz/team-profile-generator",
@@ -18,7 +27,7 @@
         "features": "Created with: Node.js, Inquirer npm, Jest npm, HTML, CSS, Bootstrap"
     },
     {
-        "key": 3,
+        "key": 4,
         "title": "README Generator",
         "deployed": "",
         "repo": "https://github.com/codenamehaylz/README-generator",
@@ -27,7 +36,7 @@
         "features": "Created with: Node.js and Inquirer npm"
     },
     {
-        "key": 4,
+        "key": 5,
         "title": "Code Quiz",
         "deployed": "https://codenamehaylz.github.io/Code-Quiz/index.html",
         "repo": "https://github.com/codenamehaylz/Code-Quiz",
@@ -36,7 +45,7 @@
         "features": "Created with: HTML, CSS, Javascript"
     },
     {
-        "key": 5,
+        "key": 6,
         "title": "Password Generator",
         "deployed": "https://codenamehaylz.github.io/Password-Generator/",
         "repo": "https://github.com/codenamehaylz/Password-Generator",
@@ -45,7 +54,7 @@
         "features": "Created with: HTML, CSS, Javascript"
     },
     {
-        "key": 6,
+        "key": 7,
         "title": "Work Day Scheduler",
         "deployed": "https://codenamehaylz.github.io/Work-Day-Scheduler/",
         "repo": "https://github.com/codenamehaylz/Work-Day-Scheduler",
