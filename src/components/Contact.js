@@ -5,7 +5,7 @@ import { faEnvelope, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
-  // creates valiation states for the contact form submission
+  // creates validation states for the contact form submission
   const [success, setSuccess] = useState(false);
   const [fail, setFail] = useState(false);
   // creates a state for the data within the contact form
@@ -76,8 +76,8 @@ function Contact() {
           <div className="contact-content">
             <FontAwesomeIcon icon={faEnvelope} /> hb_060492@hotmail.co.uk <br />
             <FontAwesomeIcon icon={faMobileScreen} /> 07725 333956 <br />
-            <a href="https://www.linkedin.com/in/hayley-blackburn1/"><FontAwesomeIcon icon={faLinkedin} /></a> 
-            <a href="https://github.com/codenamehaylz"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/hayleyparker1/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a> 
+            <a href="https://github.com/codenamehaylz" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
         

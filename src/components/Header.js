@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import cv from '../docs/HayleyBlackburnCV.pdf';
+import cv from '../docs/HayleyParkerdevcv.pdf';
 
 function Header() {
     return (
@@ -8,7 +8,7 @@ function Header() {
             <NavLink 
                 to="/react-portfolio"
                 className="navbar-brand">
-                    Hayley Blackburn
+                    Hayley Parker
                 </NavLink>
 
             <ul className="nav">
@@ -29,7 +29,8 @@ function Header() {
 
                 <li className="nav-item">
                     <a href={cv}
-                    className="nav-link">
+                    className="nav-link"
+                    target="_blank">
                         CV
                     </a>
                 </li>
